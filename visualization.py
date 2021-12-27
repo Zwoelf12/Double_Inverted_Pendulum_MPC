@@ -146,10 +146,8 @@ def animate_state_sequence(states, control_inputs, predictions, constraints):
             coins.append(coin)
         y0 = -4
         with cbook.get_sample_data(
-                '/home/jan/Desktop/MPC/NMPC_double_inverted_pendulum/pictures/supermario.png'
+                './pictures/supermario.png'
         ) as image_file:
-            #/home/jan/Desktop/MPC/NMPC_double_inverted_pendulum/pictures/supermario.png
-            #/Users/WelfRehberg/Documents/GitHub/NMPC_double_inverted_pendulum/pictures/supermario.png
             image = plt.imread(image_file)
         ani_ax.imshow(image, extent=[-10, 10, -7.15, 6], alpha=0.66)
         ground = ani_ax.plot(
